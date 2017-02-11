@@ -83,29 +83,22 @@ int main() {
         cout << "Pledge Class (3) Assignments: " << endl;
         cin >> pc3;
 
-        while (in_file >> ws)
-        {
+        while (in_file >> ws) {
             getline(in_file, val);
-            if (val[0] == '1')
-            {
-                for (int j = pc1; j > 0; j-- )
-                {
+            if (val[0] == '1') {
+                for (int j = pc1; j > 0; j--) {
                     mainArray[arrayAssignmentMarker] = val;
                     arrayAssignmentMarker++;
                 }
             }
-            else if (val[0] == '2')
-            {
-                for (int j = pc2; j > 0; j-- )
-                {
+            else if (val[0] == '2') {
+                for (int j = pc2; j > 0; j--) {
                     mainArray[arrayAssignmentMarker] = val;
                     arrayAssignmentMarker++;
                 }
             }
-            else if (val[0] == '3')
-            {
-                for (int j = pc3; j > 0; j-- )
-                {
+            else if (val[0] == '3') {
+                for (int j = pc3; j > 0; j--) {
                     mainArray[arrayAssignmentMarker] = val;
                     arrayAssignmentMarker++;
                 }
@@ -117,59 +110,6 @@ int main() {
 
         }
     }
-
-    /*
-    while (in_file >> ws) //fills in the names array with people's names and the # of possible assignments
-    {
-        int assignmentmarker;
-        int classmarker;
-        cout << "Do you want to assign individually for everyone or by class? (1 for ind, 2 for class)" << endl;
-        cin >> classmarker;
-
-        if (classmarker == 1)
-        {
-            int personalASS;
-            getline(in_file, val);
-            cout << val << endl;
-            cout << "Assignments: ";
-            cin >> personalASS;
-            // assignmentmarker = personalASS;
-            for (int j = 0; j < personalASS; j++) {
-                mainArray[arrayAssignmentMarker] = val;
-                arrayAssignmentMarker++;
-            }
-        }
-        else
-        {
-            int classmarker1;
-            cout << "Class 1: Individually or for the class? (1 for ind, 2 for class)" << endl;
-            cin >> classmarker1;
-            if (classmarker1 == 1)
-            {
-                int personalASS;
-                cout << "Assignments: ";
-                cin >> personalASS;
-                // assignmentmarker = personalASS;
-                for (int j = 0; j < personalASS; j++) {
-                    mainArray[arrayAssignmentMarker] = val;
-                    arrayAssignmentMarker++;
-                }
-            }
-            else
-            {
-                int classASS;
-                cout << "Assignments: ";
-                cin >> classASS;
-                for (int j = classASS; j > 0; j--)
-                {
-                    mainArray[arrayAssignmentMarker] = val;
-                    arrayAssignmentMarker++;
-                }
-
-            }
-        }
-
-    }*/
 
     randomize (mainArray, NUMBER_OF_ASSIGNMENTS); //randomizes the names list
 
