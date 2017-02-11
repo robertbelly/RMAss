@@ -14,3 +14,5 @@ A C++ program that makes RM assignments a lot easier.
 Something to note: For some reason, when inputting the dates the program will crash on the first try. Rerunning the program allows the program to complete everything. I'm not entirely sure why this happens.
 
 Also, don't worry about the other files in the repository. The only important one is the main.cpp file.
+
+If you need a C++ compiler, JetBrains offers a wide range of IDEs for free if you sign up with your .edu email. Here is the link to their C++ program: https://www.jetbrains.com/clion/
