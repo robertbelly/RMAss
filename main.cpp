@@ -42,20 +42,19 @@ int main() {
     }
     cout << "Total number of assignments: ";
     cin >> NUMBER_OF_ASSIGNMENTS;
-    string *mainArray = new string[NUMBER_OF_ASSIGNMENTS];
-    string *dateArray = new string[NUMBER_OF_DAYS];
+    string *mainArray;
+    mainArray = new string[NUMBER_OF_ASSIGNMENTS];
+    string *dateArray;
+    dateArray = new string[NUMBER_OF_DAYS];
     int NUMBER_OF_NAMES;
     NUMBER_OF_NAMES = 0;
-    cout << "Just type a 1 here: ";
-    cin >> NUMBER_OF_NAMES;
     string val;
     while (in_file >> ws) //fills in the names array with people's names and the # of possible assignments
     {
         getline(in_file, val);
         cout << val << endl;
         int assignmentmarker;
-        for (int i = 0; i < NUMBER_OF_NAMES; i++)
-        {
+
             int personalASS;
             cout << "Assignments: ";
             cin >> personalASS;
@@ -63,18 +62,11 @@ int main() {
             for (int j = 0; j < personalASS; j++)
             {
                 mainArray[arrayAssignmentMarker] = val;
-                //cout << mainArray[arrayAssignmentMarker] << endl;
                 arrayAssignmentMarker++;
             }
-        }
     }
     randomize (mainArray, NUMBER_OF_ASSIGNMENTS); //randomizes the names list
-    /*
-    for (int k = 0; k < NUMBER_OF_ASSIGNMENTS; k++) //prints out the randomized names list
-    {
-        cout << mainArray[k] << endl;
-    }
-     */
+
     cout << "Total number of dates for assignment: ";
     cin >> NUMBER_OF_DAYS;
     
