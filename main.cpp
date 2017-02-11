@@ -46,8 +46,8 @@ int main() {
     cin >> NUMBER_OF_ASSIGNMENTS;
     string *mainArray;
     mainArray = new string[NUMBER_OF_ASSIGNMENTS];
-    string *dateArray;
-    dateArray = new string[NUMBER_OF_DAYS];
+    double *dateArray;
+    dateArray = new double[NUMBER_OF_DAYS];
     int NUMBER_OF_NAMES;
     NUMBER_OF_NAMES = 0;
     string val;
