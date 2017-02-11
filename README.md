@@ -12,3 +12,5 @@ A C++ program that makes RM assignments a lot easier.
 - Copy the document into a spreadsheet and format the dates by week.
 
 Something to note: For some reason, when inputting the dates the program will crash on the first try. Rerunning the program allows the program to complete everything. I'm not entirely sure why this happens.
+
+Also, don't worry about the other files in the repository. The only important one is the main.cpp file.
