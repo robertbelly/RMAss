@@ -11,7 +11,9 @@ A C++ program that makes RM assignments a lot easier.
 - Paste the output into a plain text document.
 - Copy the document into a spreadsheet and format the dates by week.
 
-### Something to note: 
+### Some Things to note: 
+
+When running the program, make sure you update the working directory of the program, otherwise it will crash. The program needs to be able to find the DXnameslist file. 
 
 For some reason, when inputting the dates the program will crash on the first try. Rerunning the program allows the program to complete everything. I'm not entirely sure why this happens.
 
