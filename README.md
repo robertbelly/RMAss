@@ -1,4 +1,4 @@
-# RMAss
+# RMAssignments
 
 A C++ program that makes RM assignments a lot easier. 
 
